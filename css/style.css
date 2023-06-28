@@ -203,6 +203,7 @@ section{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
    gap: 3rem;
+   color: red;
 }
 
 .services .box-container .box{
