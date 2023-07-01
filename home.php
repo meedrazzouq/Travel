@@ -37,9 +37,9 @@
          <a href="package.php">package</a>
          <a href="book.php">book</a>
          <a href="#" id="register-btn">Register</a>
-         <a href="#" id="btn2">Login</a>
+         <a href="#" id="btn2">Login</a>>
 
-      </nav>
+   </nav>
       <div id="menu-btn" class="fas fa-bars"></div>
    </section>
    <!-- header section ends -->
