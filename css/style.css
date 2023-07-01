@@ -93,7 +93,7 @@ section{
 .header{
    position: sticky;
    top:0; left:0; right:0;
-   z-index: 1000;
+   z-index: 10;
    background-color: var(--white);
    display: flex;
    padding-top: 0rem;
@@ -201,10 +201,31 @@ section{
 }
 .partner .box-container {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+   grid-template-columns: repeat(auto-fit, minmax(5rem, 5fr));
    gap: 3rem;
 }
+.partner img{
+  width: 90%;
+  height: 70%;
+}
+.partner .box-container .partners{
+   display: flex;
+   justify-content: space-around;
+}
+.partner .box-container .partners img{
+   width: 100px;
+   height: 300px;
+}
 
+.sponsor-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.sponsor-container .sponsor img{
+   width: 10%;
+   height: 10%;
+}
 .services .box-container .box{
    padding:3rem 2rem;
    text-align: center;
@@ -230,10 +251,12 @@ section{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 .home-about .image{
    flex:1 1 41rem;
+   margin-right: 2rem;
 }
 
 .home-about .image img{
@@ -628,6 +651,81 @@ section{
    color: var(--tomato)!important;
 }
 
+
+/* register styles starts  */
+.register{
+   display: none;
+   background-color:rgb(227, 221, 221);
+   position: absolute; 
+   top: 10%;
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto;
+   width: 50%;
+   height: auto;
+   z-index: 10000;
+   border-radius: 4px;
+   padding: 2rem 3rem;
+   
+}
+
+
+.register .register-title{
+   text-align: center;
+   font-size: 3rem;
+   font-weight: bold;
+}
+.register span{
+   color: tomato;
+}
+.register .register-title{
+ display: flex;
+ justify-content: space-between;
+}
+/* .register .form{
+   width: 10rem;
+} */
+.register .form input{
+   display: flex;
+   width: 90%;
+   margin-bottom: 2rem;
+   padding: 13px;
+   border: none;
+   outline: none;
+   transition: .7s;
+}
+.register .form input:focus{
+   transform: scale(1.1);
+}
+.register label{
+   color: rgb(74, 74, 74);
+   font-size: 2rem;
+}
+.form button{
+   padding: 1.3rem;
+   margin-bottom: 10px;
+   font-size: 20px;
+   color: white;
+   border-radius: 7px;
+   font-weight: bold;
+   cursor: pointer;
+   background-color: var(--tomato);
+   transition: all ease .5s;
+}
+.form button:hover{
+   background-color: #f7735c;
+}
+.register .social-media .title{
+   font-size: 2.4rem;
+}
+.register .social-media a{
+ display: inline-block;
+ font-size: 1.7rem;
+ margin-right: 10px;
+
+}
+/* register styles ends  */
 
 /* media queries  */
 

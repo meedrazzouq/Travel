@@ -1,4 +1,4 @@
-lei menu = document.querySelector('#menu-btn');
+let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
 menu.onclick = () =>{
@@ -19,7 +19,7 @@ var swiper = new swiper(".home-slider", {
    },
 });
 
-var swiper = new Swiper(".reviews-slider", {
+var swiper = new swiper(".reviews-slider", {
    grabCursor:true,
    loop:true,
    autoHeight:true,
@@ -40,7 +40,7 @@ var swiper = new Swiper(".reviews-slider", {
 let loadMoreBtn = document.querySelector('.packages .load-more .btn');
 let currentItem = 3;
 
-loadMoreBtn.onclick = () =>{
+loadMoreBtn.onclick = function(){
    let boxes = [...document.querySelectorAll('.packages .box-container .box')];
    for (var i = currentItem; i < currentItem + 3; i++){
       boxes[i].style.display = 'inline-block';
@@ -50,3 +50,9 @@ loadMoreBtn.onclick = () =>{
       loadMoreBtn.style.display = 'none';
    }
 }
+
+let btn1 = document.getElementById("register-btn");
+let registerForm = document.getElementById("register")
+btn1.addEventListener("click", function(){
+   registerForm.style.display = "block";
+})

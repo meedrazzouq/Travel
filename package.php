@@ -233,10 +233,10 @@
       </div>
       <div class="box">
          <h3>contact info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +880-1517-089144 </a>
-         <a href="#"> <i class="fas fa-phone"></i> +111-2222-333333 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> sagorcse38@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> dhaka, Bangladesh - 1215  </a>
+         <a href="#"> <i class="fas fa-phone"></i> +212654891295 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +212631859627</a>
+         <a href="#"> <i class="fas fa-envelope"></i>  mohamedrazzouq@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> Kenitra,Morocco </a>
       </div>
       <div class="box">
          <h3>follow us</h3>
@@ -246,7 +246,6 @@
          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
       </div>
    </div>
-   <div class="credit"> designed by <span>mr. bingo mingo</span> | all rights reserved! </div>
 </section>
 
 <!-- footer section ends -->
