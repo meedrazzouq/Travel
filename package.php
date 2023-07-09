@@ -41,6 +41,8 @@
       <a href="about.php">about</a>
       <a href="package.php" class="active">package</a>
       <a href="book.php">book</a>
+      <a href="#" id="register-btn">Register</a>
+      <a  href="#" id="btn2">Login</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -49,7 +51,7 @@
 
 <!-- header section ends -->
 
-<div class="heading" style="background:url(images/header-bg-2.png) no-repeat">
+<div class="heading" style="background:url(images/backageback.jpg) no-repeat">
    <h1>packages</h1>
 </div>
 
@@ -63,144 +65,84 @@
 
       <div class="box">
          <div class="image">
-            <img src="images/img-1.jpg" alt="">
+            <img src="images/fes.jpg" alt="">
          </div>
          <div class="content">
-            <h3>Dubai Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our Dubai top selling packages!</p>
-            <h2>BDT 10,900</h2>
+            <h3>Fes Tour Packages</h3>
+            <p>Immerse yourself in Fes' vibrant culture with our city tour package, exploring the enchanting medina, historical landmarks, and indulging in the renowned gastronomy.</p>
+            <h2>700 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-2.jpg" alt="">
+            <img src="images/makness.jpg" alt="">
          </div>
          <div class="content">
-            <h3>Delhi Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our Delhi top selling packages!</p>
-            <h2>BDT 9,900</h2>
+            <h3>Mekness Tour Packages</h3>
+            <p>Discover Meknes' charm with our immersive city tour, indulging in local flavors, exploring landmarks, and experiencing vibrant culture.</p>
+            <h2>450 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-3.jpg" alt="">
+            <img src="images/agadir.jpg" alt="">
          </div>
          <div class="content">
-            <h3>Japan Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our Japan top selling packages!</p>
-            <h2>BDT 11,900</h2>
+            <h3>Agadir Tour Packages</h3>
+            <p>Unleash your senses in Agadir's coastal oasis, where sun, flavors, culture, and beauty unite in our captivating tour.</p>
+            <h2>899 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-4.jpg" alt="">
+            <img src="images/chef.jpg" alt="">
          </div>
          <div class="content">
-            <h3>Australia Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our Australia top selling packages!</p>
-            <h2>BDT 13,900</h2>
+            <h3>CHefchaouen Tour Packages</h3>
+            <p>Unleash your senses in Agadir's coastal oasis, where sun, flavors, culture, and beauty unite in our captivating tour.</p>
+            <h2>590 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-5.jpg" alt="">
+            <img src="images/dakhla.jpg" alt="">
          </div>
          <div class="content">
-            <h3>china Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our china top selling packages!</p>
-            <h2>BDT 7,900</h2>
+            <h3>Dakhla Tour Packages</h3>
+            <p>Dive into Dakhla's coastal paradise, where pristine landscapes, exquisite flavors, and vibrant culture converge in a mesmerizing experience.</p>
+            <h2>1200 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-6.jpg" alt="">
+            <img src="images/elhoceima.jpg" alt="">
          </div>
          <div class="content">
-            <h3>singapur Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our singapur top selling packages!</p>
-            <h2>BDT 12,900</h2>
+            <h3>Elhoceima Tour Packages</h3>
+            <p>Experience the hidden gem of Al Hoceima, a coastal haven where pristine beaches, rugged mountains, and rich culture come together in our captivating tour</p>
+            <h2>900 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-7.jpg" alt="">
+            <img src="images/Essaouira.jpg" alt="">
          </div>
          <div class="content">
-            <h3>spain Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our spain top selling packages!</p>
-            <h2>BDT 18,900</h2>
-            <a href="book.php" class="btn">book now</a>
-         </div>
-      </div>
-
-      <div class="box">
-         <div class="image">
-            <img src="images/img-8.jpg" alt="">
-         </div>
-         <div class="content">
-            <h3>canada Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our canada top selling packages!</p>
-            <h2>BDT 21,900</h2>
-            <a href="book.php" class="btn">book now</a>
-         </div>
-      </div>
-
-      <div class="box">
-         <div class="image">
-            <img src="images/img-9.jpg" alt="">
-         </div>
-         <div class="content">
-            <h3>barli Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our barli top selling packages!</p>
-            <h2>BDT 14,900</h2>
-            <a href="book.php" class="btn">book now</a>
-         </div>
-      </div>
-
-      <div class="box">
-         <div class="image">
-            <img src="images/img-10.jpg" alt="">
-         </div>
-         <div class="content">
-            <h3>nepal Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our nepal top selling packages!</p>
-            <h2>BDT 7,900</h2>
-            <a href="book.php" class="btn">book now</a>
-         </div>
-      </div>
-
-      <div class="box">
-         <div class="image">
-            <img src="images/img-11.jpg" alt="">
-         </div>
-         <div class="content">
-            <h3>bangladesh Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our bangladesh top selling packages!</p>
-            <h2>BDT 5,900</h2>
-            <a href="book.php" class="btn">book now</a>
-         </div>
-      </div>
-
-      <div class="box">
-         <div class="image">
-            <img src="images/img-12.jpg" alt="">
-         </div>
-         <div class="content">
-            <h3>Japan Tour Packages</h3>
-            <p>Enjoy the Emirates with unforgettable fun with our Japan top selling packages!</p>
-            <h2>BDT 11,900</h2>
+            <h3>Essaouira Tour Packages</h3>
+            <p>Escape to tranquility in Essaouira, where the soothing sounds of the ocean, serene beaches, and charming riads invite relaxation and rejuvenation.</p>
+            <h2>790 DH</h2>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
