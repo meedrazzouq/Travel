@@ -1,5 +1,21 @@
-<?php session_start(); ?>
+<?php
+include"conx.php";
+if(isset($_POST['send']))
+{
+   $fullName =$_POST['name'];
+   $email =$_POST['email'];
+   $phone =$_POST['phone'];
+   $address =$_POST['address'];    
+   $mySelect =$_POST['mySelect'];  
+   $numberPeople =$_POST['guests'];
+   $arrivals =$_POST['arrivals'];
+   $leaving =$_POST['leaving'];
 
+   $query = "INSERT INTO boooking(fullName,email,phone,address,mySelect,guests,arrivals,leaving) values ('$fullName','$email','$phone','$address','$mySelect','$numberPeople','$arrivals','$leaving')";
+   $run =  mysqli_query($connection,$query);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +59,8 @@
       <a href="about.php">about</a>
       <a href="package.php">package</a>
       <a href="book.php" class="active">book</a>
+      <a href="#" id="register-btn">Register</a>
+      <a href="#" id="btn2">Login</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -51,7 +69,7 @@
 
 <!-- header section ends -->
 
-<div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+<div class="heading" style="background:url(images/bookback.jpg) no-repeat">
    <h1>book now</h1>
 </div>
 
@@ -68,7 +86,7 @@
    }
    ?>
 
-   <form action="book_form.php" method="post" class="book-form">
+   <form action="#" method="post" class="book-form">
 
       <div class="flex">
          <div class="inputBox">
@@ -89,7 +107,17 @@
          </div>
          <div class="inputBox">
             <span>where to :</span>
-            <input type="text" placeholder="place you want to visit" name="location">
+            <select id="myComboBox"  name="mySelect">
+            <option value="option2">Rabat</option>
+            <option value="option2">Agadir</option>
+            <option value="option2">Tanger</option>
+            <option value="option2">Fes</option>
+            <option value="option2">Marrakech</option>
+            <option value="option2">Mekness</option>
+            <option value="option2">CHefchaouen</option>
+            <option value="option2">Ifran</option>
+            <option value="option2">Essaouira</option>
+</select>
          </div>
          <div class="inputBox">
             <span>how many :</span>

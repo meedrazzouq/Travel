@@ -653,7 +653,7 @@ section{
 
 
 /* register styles starts  */
-.register{
+ .register{
    display: none;
    background-color:rgb(227, 221, 221);
    position: absolute; 
@@ -667,8 +667,7 @@ section{
    z-index: 10000;
    border-radius: 4px;
    padding: 2rem 3rem;
-   
-}
+} 
 
 
 .register .register-title{
@@ -683,9 +682,12 @@ section{
  display: flex;
  justify-content: space-between;
 }
-/* .register .form{
-   width: 10rem;
-} */
+.register-title .fa-solid .fa-xmark{
+   cursor: pointer;
+} 
+.register .form{
+   width: 65rem;
+} 
 .register .form input{
    display: flex;
    width: 90%;
@@ -703,6 +705,7 @@ section{
    font-size: 2rem;
 }
 .form button{
+   width: 20%;
    padding: 1.3rem;
    margin-bottom: 10px;
    font-size: 20px;
@@ -724,11 +727,17 @@ section{
  font-size: 1.7rem;
  margin-right: 10px;
 
-}
+} 
+/* .blur-effect
+ {
+   filter:blur(5px);
+} */
 /* register styles ends  */
 
 /* media queries  */
-
+.loging{
+   font-size: 32px;
+}
 @media (max-width:1200px){
 
    section{

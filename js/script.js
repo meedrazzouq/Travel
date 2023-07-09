@@ -11,7 +11,7 @@ window.onscroll = () =>{
    navbar.classList.remove('active');
 };
 
-var swiper = new swiper(".home-slider", {
+var swiper = new Swiper(".home-slider", {
    loop:true,
    navigation: {
      nextEl: ".swiper-button-next",
@@ -19,7 +19,7 @@ var swiper = new swiper(".home-slider", {
    },
 });
 
-var swiper = new swiper(".reviews-slider", {
+var swiper = new Swiper(".reviews-slider", {
    grabCursor:true,
    loop:true,
    autoHeight:true,
@@ -36,11 +36,11 @@ var swiper = new swiper(".reviews-slider", {
       },
    },
 });
+// console.log(swiper)
 
 let loadMoreBtn = document.querySelector('.packages .load-more .btn');
 let currentItem = 3;
-
-loadMoreBtn.onclick = function(){
+loadMoreBtn.addEventListener("click",function(){
    let boxes = [...document.querySelectorAll('.packages .box-container .box')];
    for (var i = currentItem; i < currentItem + 3; i++){
       boxes[i].style.display = 'inline-block';
@@ -49,10 +49,27 @@ loadMoreBtn.onclick = function(){
    if(currentItem >= boxes.length){
       loadMoreBtn.style.display = 'none';
    }
-}
+})
 
+
+// registartion form pop when the botton is clicked
 let btn1 = document.getElementById("register-btn");
-let registerForm = document.getElementById("register")
+let registerForm = document.getElementById("registernow")
 btn1.addEventListener("click", function(){
    registerForm.style.display = "block";
+   window.document.body.classList.add("blur-effect")
 })
+
+//the form shows auto after 4 seconds
+function displayForm()
+{
+   registerForm.style.display = "block"
+}
+setTimeout(displayForm,4000)
+
+// the form hides when the exit icon is clicked
+let exitIcon = document.getElementById("exit");
+exitIcon.addEventListener("click", function(){
+   registerForm.style.display="none";
+})
+

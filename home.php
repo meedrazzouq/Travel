@@ -1,6 +1,46 @@
+<?php
+include 'conx.php';
+
+if (isset($_POST['submit'])) {
+   $fname = $_POST['fname'];
+   $lname = $_POST['lname'];
+   $email = $_POST['email'];
+   $passw = $_POST['password'];
+
+   // Check if the email already exists in the database
+   $checkQuery = "SELECT * FROM users WHERE email = ?";
+   $checkStatement = mysqli_prepare($connection, $checkQuery);
+   mysqli_stmt_bind_param($checkStatement, "s", $email);
+   mysqli_stmt_execute($checkStatement);
+   $result = mysqli_stmt_get_result($checkStatement);
+   
+   if (mysqli_num_rows($result) > 0) {
+      $message = "Email already exists. Please enter a different email.";
+   } else {
+      // Email does not exist, proceed with registration
+      $insertQuery = "INSERT INTO users (fname, lname, email, password) VALUES (?, ?, ?, ?)";
+      $insertStatement = mysqli_prepare($connection, $insertQuery);
+
+      if ($insertStatement) {
+         mysqli_stmt_bind_param($insertStatement, "ssss", $fname, $lname, $email, $passw);
+
+         if (mysqli_stmt_execute($insertStatement)) {
+            echo "Registration successful";
+         } else {
+            echo "Error executing statement: " . mysqli_stmt_error($insertStatement);
+         }
+
+         mysqli_stmt_close($insertStatement);
+      } else {
+         echo "Error preparing statement: " . mysqli_error($connection);
+      }
+   }
+   
+   mysqli_stmt_close($checkStatement);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,23 +79,29 @@
          <a href="#" id="register-btn">Register</a>
          <a href="#" id="btn2">Login</a>
 
-      </nav>
+   </nav>
       <div id="menu-btn" class="fas fa-bars"></div>
    </section>
    <!-- header section ends -->
 <!-- register form starts -->
-<section class="register" id="register">
-<div class="register-title">REGISTER NOW <i class="fa-solid fa-xmark"></i></div>
+<section class="register" id="registernow">
+<div class="register-title">REGISTER NOW <i style="cursor: pointer;" id="exit" class="fa-solid fa-xmark"></i></div>
    <div class="form">
-      <label for="">first Name</label>
-      <input type="text" placeholder="Enter your first name" require name="fname">
-      <label for="">Last Name</label>
-      <input type="text" placeholder="Enter your last name" require name="lname">
-      <label for="">Email Address</label>
-      <input type="email" placeholder="Enter a valid email" require name="email">
-      <label for="">Password</label>
-      <input type="email" placeholder="Enter an unexpected password" require name="password">
-      <button id="submit-btn" type="submit">Create</button>
+      <form action="#" method="POST">>
+      <label for=""> first Name* </label>
+      <input type="text" id="fname" placeholder="Enter your first name" require name="fname">
+      <label for="">Last Name*</label>
+      <input type="text" id="lname" placeholder="Enter your last name" require name="lname">
+      <label for="">Email Address*</label>
+      <input type="email" id="email" placeholder="Enter a valid email" require name="email">
+      <label for="">Password*</label>
+      <input type="password" id="pass" placeholder="Enter an unexpected password" require name="password">
+      <button id="submit-btn" name="submit" type="submit">Create</button>
+      <?php if (!empty($message)): ?>
+         <h1 style="color: red;"><?php echo $message; ?></h1>
+         or <a class="loging" href="#">login</a>
+      <?php endif; ?>
+      </form>
    </div>
    <!-- <div class="social-media">
       <div class="title">Register using:</div>
@@ -255,7 +301,7 @@
    <!-- swiper js link  -->
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <!-- custom js file link  -->
-   <script src="js/script.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 
 </html>

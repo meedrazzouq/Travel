@@ -41,6 +41,8 @@
       <a href="about.php" class="active">about</a>
       <a href="package.php">package</a>
       <a href="book.php">book</a>
+      <a href="#" id="register-btn">Register</a>
+      <a href="#" id="btn2">Login</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -49,7 +51,7 @@
 
 <!-- header section ends -->
 
-<div class="heading" style="background:url(images/header-bg-1.png) no-repeat">
+<div class="heading" style="background:url(images/aboutusimage.jpg) no-repeat">
    <h1>about us</h1>
 </div>
 
@@ -58,13 +60,13 @@
 <section class="about">
 
    <div class="image">
-      <img src="images/about-img.jpg" alt="">
+      <img src="images/chooseusimage.jpg" alt="">
    </div>
 
    <div class="content">
       <h3>why choose us?</h3>
-      <p>Amazing Tours a Best tour Operator and Travel agent in Bangladesh. We are Tour Package, Hotel booking. Bangladesh Tours & Travel agent. Find international and domestic tour packages from bangladesh at low prices including best ... Travel Package | Honeymoon Package | Tour Package</p>
-      <p>Fantastic getaway. Very good communication. Friendly and Easy to deal with.(Shame the transfer back to the airport on the final day wasn't included)</p>
+      <p>We have your back to make your trip an unforgettable one. Unbeatable prices and exceptional service. We offer affordable travel packages without compromising on quality, thanks to our extensive network of partners and industry connections. Our dedicated team of travel specialists takes a personalized approach, crafting tailor-made itineraries that cater to your preferences and interests. With us, you'll have peace of mind knowing that we're always available to provide support and guidance throughout your journey. Trust us to deliver unforgettable travel experiences that exceed your expectations, all at an affordable price.</p>
+      <p> <em>24/23 customer support to answer all  your inquiries</em> </p>
       <div class="icons-container">
          <div class="icons">
             <i class="fas fa-map"></i>
